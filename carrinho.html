@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Carrinho</title>
+    <link rel="icon" href="../img/niki.jpg">
+    <link rel="stylesheet" href="./css/carrinho.css">
+</head>
+
+    <main>
+<!-- conteudo para a pagina carrinho -->
+ <section class="carrinho">
+    <!-- produtos do carrinho -->
+ <table>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Tamanho</th>
+            <th>Preço unitário</th>
+            <th>Total</th>
+            <th>Ação</th>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td><img class="produto1" src="../img/produto1.jpg" 
+                alt="">Long sleeved t-shirt with print</td>
+            <td>
+            <input type="number" value="1" min="1" class="quantidades">
+            <td>
+                <form class="opcoes-compra">
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho">
+                      <option>P</option>
+                      <option>M</option>
+                      <option>G</option>
+                      <option>GG</option>
+                    </select>
+
+             <label for="cor">Cor:</label>
+              <select id="cor">
+                <option>Branco</option>
+                <option>Azul</option>
+                <option>Preto</option>
+              </select>
+            
+            </td>
+            </td>
+            <td class="preco-unitario">R$95,00</td>
+            <td class="preco-total">R$105,00</td>
+            <td>
+            <button class="remover-produto">Remover</button>
+        </td>
+        </tr>
+        
+            <td><img class="produto2" src="../img/produto2.jpg" alt="">Blusa XRay com tule</td>
+            <td>
+            <input type="number" value="2" min="1" class="quantidades">
+            <td>
+                <form class="opcoes-compra">
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho">
+                      <option>P</option>
+                      <option>M</option>
+                      <option>G</option>
+                      <option>GG</option>
+                    </select>
+
+             <label for="cor">Cor:</label>
+              <select id="cor">
+                <option>Branco</option>
+                <option>Azul</option>
+                <option>Preto</option>
+              </select>
+            </td>
+            </td>
+            <td class="preco-unitario">R$78,00</td>
+            <td class="preco-total">R$85,00</td>
+            <td>
+                <button class="remover-produto">Remover</button>
+            </td>
+        </tr>
+    </tbody>
+ </table>    
+    <!-- Nota final -->
+            <div class="total-final">
+            <h3>Total Final: <span id="total-final">R$159,00</span></h3>
+     </div>
+ </section>
+ </main>
+  <!-- Adicionando a script -->
+            <script src="./carrinho.js"></script>
+</body>
+</html>
